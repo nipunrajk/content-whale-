@@ -15,80 +15,6 @@ import MentionsSection from './Mentions';
 import TestimonialsSection from './Testimonials';
 import { homeData } from '@/data/home';
 
-// export function HomePage({ data }: { data: any }) {
-//   const {
-//     hero,
-//     solutions,
-//     pricingCalculator,
-//     assistanceCta,
-//     features,
-//     stats,
-//     caseStudies,
-//     resources,
-//     faqs,
-//     finalCta,
-//   } = data;
-//   return (
-//     <div className='overflow-x-clip'>
-//       <Hero data={hero} />
-//       <BrandLogos data={hero?.trustedBy} />
-
-//       <section id='solutions' className='container mx-auto px-4 py-14'>
-//         <h2 className='text-center text-2xl md:text-3xl font-semibold'>
-//           {solutions?.heading || 'Choose the Solution that Best Suits You'}
-//         </h2>
-//         {solutions?.subhead && (
-//           <p className='mt-2 text-center text-slate-600'>{solutions.subhead}</p>
-//         )}
-//         {/* Dynamic services grid from /api/services */}
-//         <ServicesSection />
-//       </section>
-
-//       <section className='container mx-auto px-4 py-10'>
-//         <PricingCalculator data={pricingCalculator} />
-//       </section>
-
-//       <CalloutBanner data={data.assistanceCta} />
-
-//       <section className='container mx-auto px-4 py-16'>
-//         <Features data={features} />
-//         <div className='mt-12'>
-//           <Stats data={stats} />
-//         </div>
-//       </section>
-
-//       <section className='container mx-auto px-4 py-16'>
-//         {/* Dynamic mentions logos from /api/mentions */}
-//         <MentionsSection
-//           heading='Featured Mentions & Publications'
-//           subhead='From AMA to Forbes, we have been mentioned in many reputed journals and publications.'
-//         />
-//         <CaseStudies data={caseStudies} />
-//       </section>
-
-//       <section className='container mx-auto px-4 py-16'>
-//         {/* Dynamic testimonials from /api/testimonials */}
-//         <TestimonialsSection
-//           heading='Don’t Just Take Our Word for it'
-//           subhead='We’ve been reviewed more than 20,000 times with an average of 4.5 out 5 rating.'
-//         />
-//       </section>
-
-//       <section id='resources' className='container mx-auto px-4 py-16'>
-//         <Resources data={resources} />
-//       </section>
-
-//       <section className='container mx-auto px-4 py-16'>
-//         <FAQ data={faqs} />
-//       </section>
-
-//       <section className='container mx-auto px-4 py-16'>
-//         <FinalCTA data={finalCta} />
-//       </section>
-//     </div>
-//   );
-// }
-
 export function HomePage() {
   return (
     <div className='overflow-x-clip'>
@@ -97,22 +23,22 @@ export function HomePage() {
       <BrandLogos />
 
       {/* Dynamic sections that fetch from APIs */}
-      <section id='solutions' className='container mx-auto px-4 py-14'>
-        <h2 className='text-center text-2xl md:text-3xl font-semibold'>
+      <section id='solutions' className='container mx-auto px-4 py-16'>
+        <h2 className='text-center text-2xl md:text-3xl font-semibold text-slate-900 mb-4'>
           Choose the Solution that Best Suits You
         </h2>
         <ServicesSection /> {/* Fetches from /api/services */}
       </section>
 
-      <section className='container mx-auto px-4 py-10'>
+      <section className='container mx-auto px-4 py-16'>
         <PricingCalculator data={homeData.pricingCalculator} />
       </section>
 
       <CalloutBanner data={homeData.assistanceCta} />
 
-      <section className='container mx-auto px-16'>
+      <section className='container mx-auto px-4 py-16'>
         <Features data={homeData.features} />
-        <div className='mt-12'>
+        <div className='mt-16'>
           <Stats data={homeData.stats} />
         </div>
       </section>
@@ -123,7 +49,9 @@ export function HomePage() {
           heading='Featured Mentions & Publications'
           subhead='From AMA to Forbes, we have been mentioned in many reputed journals and publications.'
         />
-        <CaseStudies data={homeData.caseStudies} />
+        <div className='mt-16'>
+          <CaseStudies data={homeData.caseStudies} />
+        </div>
       </section>
 
       <section className='container mx-auto px-4 py-16'>
