@@ -1,13 +1,7 @@
 import { HomePage } from './sections/HomePage';
 
 export default async function Page() {
-  // Fetch from our API route (can be changed to force-cache if desired)
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL ?? ''}/api/home`,
-    {
-      cache: 'no-store',
-    }
-  );
-  const data = await res.json();
-  return <HomePage data={data} />;
+  // No need to fetch from API since we're using static data for static sections
+  // Dynamic sections fetch their own data from their respective APIs
+  return <HomePage />;
 }
