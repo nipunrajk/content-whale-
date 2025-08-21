@@ -1,7 +1,15 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import Navbar from './ components/Navbar';
+
+import { Lato } from 'next/font/google';
+
+const lato = Lato({
+  subsets: ['latin'],
+  weight: ['100', '300', '400', '700', '900'],
+  display: 'swap',
+  variable: '--font-lato',
+});
 
 export const metadata: Metadata = {
   title: 'Content Whale — Textual Content Solutions',
@@ -21,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' suppressHydrationWarning>
+    <html lang='en' suppressHydrationWarning className={lato.variable}>
       <body className='antialiased text-slate-800'>
         <Navbar />
         <main>{children}</main>

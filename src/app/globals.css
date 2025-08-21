@@ -1,1 +1,9 @@
 @import 'tailwindcss';
+
+@theme inline {
+  --font-lato: var(--font-lato);
+}
+
+.font-lato {
+  font-family: var(--font-lato), system-ui, sans-serif;
+}

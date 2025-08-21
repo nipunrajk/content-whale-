@@ -1,30 +1,31 @@
 import Link from 'next/link';
+import { ChevronDown } from 'lucide-react';
 
 export default function Navbar() {
   return (
     <header className='sticky top-0 z-50 bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b border-slate-200'>
       <div className='container mx-auto px-4 py-3 flex items-center justify-between'>
         {/* Left side: Logo + Brand + Navigation */}
-        <div className='flex items-center gap-8'>
+        <div className='flex items-center gap-10'>
           <Link href='/' className='flex items-center gap-2 font-semibold'>
             <img src='/logo.svg' alt='Content Whale' />
           </Link>
 
           {/* Navigation links next to logo */}
-          <nav className='hidden md:flex items-center gap-6 text-sm'>
+          <nav className='font-lato font-normal hidden md:flex items-center gap-6 text-sm'>
             <Link
               href='#solutions'
-              className='hover:text-violet-700 transition-colors flex items-center gap-1'
+              className=' hover:text-violet-700 transition-colors flex items-center gap-1'
             >
               Content Solutions
-              <span className='text-xs'>▼</span>
+              <ChevronDown className='w-4 h-4 mt-1' />
             </Link>
             <Link
               href='#resources'
               className='hover:text-violet-700 transition-colors flex items-center gap-1'
             >
               Resources
-              <span className='text-xs'>▼</span>
+              <ChevronDown className='w-4 h-4 mt-1' />
             </Link>
             <Link
               href='/about'
@@ -36,10 +37,10 @@ export default function Navbar() {
         </div>
 
         {/* Right side: Rank On AI + Let's Talk */}
-        <div className='flex items-center gap-6'>
+        <div className='flex items-center gap-5'>
           {/* Rank On AI feature */}
-          <div className='hidden lg:flex items-center gap-2'>
-            <span className='bg-gradient-to-r from-violet-600 to-orange-500 bg-clip-text text-transparent font-medium'>
+          <div className='hidden lg:flex items-center gap-3'>
+            <span className='font-lato font-semibold bg-gradient-to-r from-violet-600 to-orange-500 bg-clip-text text-transparent font-medium'>
               Rank On AI
             </span>
             <img src='/new.svg' alt='New' />
