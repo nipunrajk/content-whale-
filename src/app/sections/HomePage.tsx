@@ -15,7 +15,7 @@ export function HomePage() {
       <Hero />
 
       {/* Dynamic sections that fetch from APIs */}
-      <section id='solutions' className='container mx-auto px-4'>
+      <section id='solutions' className='container mx-auto px-4 mb-24'>
         <h2 className='font-source-serif-pro text-center text-2xl md:text-[40px] font-semibold text-primary mb-10'>
           Choose the Solution
           <span className='ml-2 bg-[image:var(--gradient-brand)] bg-clip-text text-transparent [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] font-semibold'>

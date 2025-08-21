@@ -40,23 +40,26 @@ function getCollageForService(service: ServiceCard): ReactNode {
 
 function ContentWritingCollage({ title }: { title: string }) {
   return (
-    <div className='absolute inset-0 rounded-3xl bg-[linear-gradient(205deg, #FFF 22.12%, #F1DAFF 129.66%)] pt-24'>
-      <div>
+    <div className='absolute inset-0 rounded-3xl bg-[linear-gradient(205deg,#FFF_22.12%,#F1DAFF_129.66%)]'>
+      <div className='px-5 pt-5'>
         <img
           src='/services/content-writing/writing.svg'
           alt='Writing icon'
-          className='absolute left-5 top-5 h-10 w-10'
+          className='h-10 w-10'
           loading='lazy'
         />
-        <p className='mx-auto text-center font-source-serif-pro text-[28px] md:text-[32px] font-semibold text-[#6F2DBD]'>
-          {title}
-        </p>
       </div>
-      <img
-        src='/services/content-writing/group1.png'
-        alt='Content collage'
-        loading='lazy'
-      />
+      <h3 className='mt-3 px-5 text-left font-source-serif-pro text-[28px] md:text-[32px] font-semibold text-[#6F2DBD]'>
+        {title}
+      </h3>
+      <div className='absolute inset-x-0 bottom-0 top-[132px] md:top-[152px] overflow-hidden'>
+        <img
+          src='/services/content-writing/group1.png'
+          alt='Content collage'
+          className='absolute bottom-0 left-1/2 w-[118%] max-w-none -translate-x-1/2 select-none pointer-events-none'
+          loading='lazy'
+        />
+      </div>
     </div>
   );
 }
@@ -64,36 +67,52 @@ function ContentWritingCollage({ title }: { title: string }) {
 function SeoCollage({ title }: { title: string }) {
   return (
     <div className='absolute inset-0 rounded-3xl bg-[linear-gradient(180deg,rgba(255,255,255,0.98)_0%,rgba(242,249,255,0.98)_100%)]'>
-      <img
-        src='/services/Seo/seo.svg'
-        alt='SEO icon'
-        className='absolute left-5 top-5 h-10 w-10'
-        loading='lazy'
-      />
-      <h3 className='absolute left-1/2 top-20 -translate-x-1/2 font-source-serif-pro text-[28px] md:text-[32px] font-semibold text-[#216EA0]'>
+      <div className='px-5 pt-5'>
+        <img
+          src='/services/seo/seo.svg'
+          alt='Writing icon'
+          className='h-10 w-10'
+          loading='lazy'
+        />
+      </div>
+      <h3 className='mt-3 px-5 text-left font-source-serif-pro text-[28px] md:text-[32px] font-semibold text-[#216EA0]'>
         {title}
       </h3>
-      <div className='absolute bottom-0 left-0 right-0 top-16 flex items-end justify-center'>
-        <div className='h-[55%] w-[85%] rounded-2xl bg-gradient-to-t from-[#D8EEFF] to-white ring-1 ring-[#D8EEFF]' />
+      <div className='absolute inset-x-0 bottom-0 top-[132px] md:top-[152px] overflow-hidden'>
+        <img
+          src='/services/seo/group.png'
+          alt='Content collage'
+          className='absolute bottom-0 left-1/2 w-[118%] max-w-none -translate-x-1/2 select-none pointer-events-none'
+          loading='lazy'
+        />
       </div>
     </div>
   );
 }
 
+<div className='absolute inset-0 rounded-3xl bg-[linear-gradient(180deg,rgba(255,255,255,0.98)_0%,rgba(255,246,230,0.98)_100%)]'></div>
+
 function TranslationCollage({ title }: { title: string }) {
   return (
     <div className='absolute inset-0 rounded-3xl bg-[linear-gradient(180deg,rgba(255,255,255,0.98)_0%,rgba(255,246,230,0.98)_100%)]'>
-      <img
-        src='/services/translation/translation.svg'
-        alt='Translation icon'
-        className='absolute left-5 top-5 h-10 w-10'
-        loading='lazy'
-      />
-      <h3 className='absolute left-1/2 top-20 -translate-x-1/2 font-source-serif-pro text-[28px] md:text-[32px] font-semibold text-[#E38900]'>
+      <div className='px-5 pt-5'>
+        <img
+          src='/services/translation/translation.svg'
+          alt='Writing icon'
+          className='h-10 w-10'
+          loading='lazy'
+        />
+      </div>
+      <h3 className='mt-3 px-5 text-left font-source-serif-pro text-[28px] md:text-[32px] font-semibold text-[#E38900]'>
         {title}
       </h3>
-      <div className='absolute bottom-0 left-0 right-0 top-16 flex items-end justify-center'>
-        <div className='h-[55%] w-[85%] rounded-2xl bg-gradient-to-t from-[#FFE7BF] to-white ring-1 ring-[#FFE7BF]' />
+      <div className='absolute inset-x-0 bottom-0 top-[132px] md:top-[152px] overflow-hidden'>
+        <img
+          src='/services/translation/group.png'
+          alt='Content collage'
+          className='absolute bottom-0 left-1/2 w-[118%] max-w-none -translate-x-1/2 select-none pointer-events-none'
+          loading='lazy'
+        />
       </div>
     </div>
   );
