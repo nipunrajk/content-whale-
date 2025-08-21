@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className='relative overflow-hidden' aria-label='Hero'>
-      <div className='relative z-10 container mx-auto px-4 py-20 md:py-32'>
+      <div className='relative z-10 container mx-auto px-4 pt-14 pb-24'>
         <div className='mx-auto text-center'>
           <p className='text-2xl font-medium text-secondary mb-4'>
             We bring you,

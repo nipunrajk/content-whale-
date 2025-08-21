@@ -11,13 +11,14 @@ export function HomePage() {
   return (
     <div className='relative overflow-x-clip'>
       <BackgroundGradients />
-      {/* Static sections with hardcoded data */}
+
       <Hero />
+
       {/* Dynamic sections that fetch from APIs */}
-      <section id='solutions' className='container mx-auto px-4 py-16'>
-        <h2 className='text-center text-2xl md:text-4xl font-semibold text-slate-900 mb-8'>
+      <section id='solutions' className='container mx-auto px-4 mb-24'>
+        <h2 className='font-source-serif-pro text-center text-2xl md:text-[40px] font-semibold text-primary mb-10'>
           Choose the Solution
-          <span className='ml-2 bg-[image:var(--gradient-brand)] bg-clip-text text-transparent [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]'>
+          <span className='ml-2 bg-[image:var(--gradient-brand)] bg-clip-text text-transparent [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] font-semibold'>
             that Best Suits You
           </span>
         </h2>
