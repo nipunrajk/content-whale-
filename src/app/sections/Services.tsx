@@ -1,4 +1,4 @@
-import Solutions from '../ components/Solutions';
+import Solutions from '../components/Solutions';
 import { getBaseUrl } from '../../lib/base-url';
 
 export default async function ServicesSection() {
