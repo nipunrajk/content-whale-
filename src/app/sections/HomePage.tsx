@@ -2,6 +2,7 @@ import BrandLogos from '../components/BrandLogos';
 import Hero from '../components/Hero';
 import BackgroundGradients from '../components/BackgroundGradients';
 import ServicesSection from './Services';
+import PricingCalculator from '../components/PricingCalculator';
 import Solutions from '../components/Solutions';
 import Features from '../components/Features';
 import Stats from '../components/Stats';
@@ -24,11 +25,12 @@ export function HomePage() {
         </h2>
         <ServicesSection /> {/* Fetches from /api/services */}
       </section>
-      {/* Remove these since they're now in Hero */}
-      {/* <section className='container mx-auto px-4 py-16'>
-        <PricingCalculator data={homeData.pricingCalculator} />
-      </section> */}
-      {/* <CalloutBanner data={homeData.assistanceCta} /> */}
+
+      {/* Pricing Calculator */}
+      <section className='container mx-auto px-4 pb-16'>
+        <PricingCalculator />
+      </section>
+
       <section className='container mx-auto px-4 py-16'>
         <Features data={homeData.features} />
         <div className='mt-16'>
