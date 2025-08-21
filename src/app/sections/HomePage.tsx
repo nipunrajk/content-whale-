@@ -10,7 +10,7 @@ export function HomePage() {
   return (
     <div className='overflow-x-clip'>
       {/* Static sections with hardcoded data */}
-      <Hero /> {/* Now includes assistance CTA + pricing calculator */}
+      <Hero />
       <BrandLogos />
       {/* Dynamic sections that fetch from APIs */}
       <section id='solutions' className='container mx-auto px-4 py-16'>
