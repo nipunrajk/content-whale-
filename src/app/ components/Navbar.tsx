@@ -49,7 +49,7 @@ export default function Navbar() {
           {/* Let's Talk button */}
           <Link
             href='/contact'
-            className='bg-gradient-to-r from-violet-700 to-violet-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:from-violet-800 hover:to-violet-700 focus:outline-none focus:ring-2 focus:ring-violet-400 transition-all flex items-center gap-2'
+            className='bg-gradient-to-r from-violet-700 to-violet-600 text-white px-4 py-3 rounded-lg text-sm font-medium hover:from-violet-800 hover:to-violet-700 focus:outline-none focus:ring-2 focus:ring-violet-400 transition-all flex items-center gap-2'
           >
             Let's Talk
             <span className='text-white'>→</span>
