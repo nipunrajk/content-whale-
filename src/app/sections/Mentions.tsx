@@ -1,5 +1,5 @@
 import { getBaseUrl } from '@/lib/base-url';
-import Mentions from '../ components/Mentions';
+import Mentions from '../components/Mentions';
 
 export default async function MentionsSection({
   heading,
