@@ -1,5 +1,6 @@
 import BrandLogos from '../components/BrandLogos';
 import Hero from '../components/Hero';
+import BackgroundGradients from '../components/BackgroundGradients';
 import ServicesSection from './Services';
 import Solutions from '../components/Solutions';
 import Features from '../components/Features';
@@ -8,14 +9,17 @@ import { homeData } from '@/data/home';
 
 export function HomePage() {
   return (
-    <div className='overflow-x-clip'>
+    <div className='relative overflow-x-clip'>
+      <BackgroundGradients />
       {/* Static sections with hardcoded data */}
       <Hero />
-      <BrandLogos />
       {/* Dynamic sections that fetch from APIs */}
       <section id='solutions' className='container mx-auto px-4 py-16'>
-        <h2 className='text-center text-2xl md:text-3xl font-semibold text-slate-900 mb-4'>
-          Choose the Solution that Best Suits You
+        <h2 className='text-center text-2xl md:text-4xl font-semibold text-slate-900 mb-8'>
+          Choose the Solution
+          <span className='ml-2 bg-[image:var(--gradient-brand)] bg-clip-text text-transparent [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]'>
+            that Best Suits You
+          </span>
         </h2>
         <ServicesSection /> {/* Fetches from /api/services */}
       </section>

@@ -1,14 +1,6 @@
 export default function Hero() {
   return (
     <section className='relative overflow-hidden' aria-label='Hero'>
-      <div
-        className='absolute inset-0 z-0'
-        style={{
-          background:
-            'linear-gradient(135deg,#f4e6ff 0%,#fff2d9 50%,#e8f3ff 100%)',
-        }}
-      />
-
       <div className='relative z-10 container mx-auto px-4 py-20 md:py-32'>
         <div className='mx-auto text-center'>
           <p className='text-2xl font-medium text-secondary mb-4'>
@@ -44,6 +36,7 @@ hover:bg-violet focus:outline-none focus:ring-4 focus:ring-violet transition-all
           </div>
 
           {/* Trusted By */}
+          {/* TODO: move this to BrandLogo.tsx */}
           <div className='font-roboto text-xl font-bold mt-12'>
             <p className='text-base md:text-lg text-slate-900 text-center'>
               Trusted by <span className='text-secondary'>2,000+ Brands</span>
@@ -64,7 +57,7 @@ hover:bg-violet focus:outline-none focus:ring-4 focus:ring-violet transition-all
                   <img
                     src={b.src}
                     alt={b.name}
-                    className='h-6 md:h-8 w-auto'
+                    className='w-auto object-contain'
                     loading='lazy'
                   />
                 </li>
