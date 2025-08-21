@@ -35,4 +35,6 @@
     #fa8333 75.31%,
     #fbbb18 100%
   );
+
+  --gradient-assistance: linear-gradient(92deg, #42175b 0%, #7b00be 100%);
 }

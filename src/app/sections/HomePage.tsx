@@ -7,6 +7,7 @@ import Solutions from '../components/Solutions';
 import Features from '../components/Features';
 import Stats from '../components/Stats';
 import { homeData } from '@/data/home';
+import CalloutBanner from '../components/CalloutBanner';
 
 export function HomePage() {
   return (
@@ -27,8 +28,11 @@ export function HomePage() {
       </section>
 
       {/* Pricing Calculator */}
-      <section className='container mx-auto px-4 pb-16'>
+      <section className='container mx-auto px-4 pb-8'>
         <PricingCalculator />
+        <div className='mt-4'>
+          <CalloutBanner />
+        </div>
       </section>
 
       <section className='container mx-auto px-4 py-16'>
