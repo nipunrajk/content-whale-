@@ -1,9 +1,26 @@
 @import 'tailwindcss';
 
-@theme inline {
-  --font-lato: var(--font-lato);
+:root {
+  --secondary: #eba800;
+  --violet: #42175b;
 }
 
-.font-lato {
-  font-family: var(--font-lato), system-ui, sans-serif;
+@theme inline {
+  --font-lato: var(--font-lato);
+  --font-source-serif-pro: var(--font-source-serif-pro);
+  --font-inter: var(--font-inter);
+  --font-roboto: var(--font-roboto), system-ui, sans-serif;
+
+  --color-secondary: var(--secondary);
+  --color-violet: var(--violet);
+
+  --gradient-brand: linear-gradient(
+    90deg,
+    #42175a 0%,
+    #811861 18.02%,
+    #bb2a5d 35.73%,
+    #e44e49 55%,
+    #fa8333 75.31%,
+    #fbbb18 100%
+  );
 }

@@ -2,13 +2,33 @@ import './globals.css';
 import type { Metadata } from 'next';
 import Navbar from './components/Navbar';
 
-import { Lato } from 'next/font/google';
+import { Lato, Inter, Source_Serif_4, Roboto } from 'next/font/google';
 
 const lato = Lato({
   subsets: ['latin'],
   weight: ['100', '300', '400', '700', '900'],
   display: 'swap',
   variable: '--font-lato',
+});
+
+const sourceSerifPro = Source_Serif_4({
+  subsets: ['latin'],
+  weight: ['300', '400', '600', '700'],
+  display: 'swap',
+  variable: '--font-source-serif-pro',
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
+
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['100', '300', '400', '500', '700', '900'],
+  display: 'swap',
+  variable: '--font-roboto',
 });
 
 export const metadata: Metadata = {
@@ -29,7 +49,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' suppressHydrationWarning className={lato.variable}>
+    <html
+      lang='en'
+      suppressHydrationWarning
+      className={`${lato.variable} ${sourceSerifPro.variable} ${inter.variable} ${roboto.variable}`}
+    >
       <body className='antialiased text-slate-800'>
         <Navbar />
         <main>{children}</main>
