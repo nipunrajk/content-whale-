@@ -8,6 +8,7 @@ import Features from '../components/Features';
 import Stats from '../components/Stats';
 import { homeData } from '@/data/home';
 import CalloutBanner from '../components/CalloutBanner';
+import CurvedDivider from '../components/CurvedDivider';
 
 export function HomePage() {
   return (
@@ -35,7 +36,23 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className='container mx-auto px-4 py-16'>
+      {/* Curved divider between sections */}
+      <CurvedDivider
+        position='bottom'
+        lineOnly
+        variant='arc'
+        height={70}
+        bulge={160}
+        stroke='#e6e6f0'
+        strokeWidth={2}
+        shadow
+        shadowColor='rgba(0,0,0,0.18)'
+        shadowBlur={8}
+        shadowOffsetY={4}
+        className=''
+      />
+
+      <section className='container mx-auto px-4 pt-8 pb-16'>
         <Features data={homeData.features} />
         <div className='mt-16'>
           <Stats data={homeData.stats} />
