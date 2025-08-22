@@ -1,4 +1,37 @@
-export const homeData = {
+ const features = {
+  heading: "Top Features of Content Whale's Content Writing Services",
+  items: [
+    {
+      icon: '/features/delivery.svg',
+      title: 'Blazing‑Fast Content Delivery',
+      body: 'Process-driven practices enable delivery up to 20,000+ words in 48 hours.',
+    },
+    {
+      icon: '/features/generation.svg',
+      title: 'TG‑focused Content',
+      body: 'Data-driven writing practices to drive traffic and conversions.',
+    },
+    {
+      icon: '/features/google.svg',
+      title: 'Original & Authoritative',
+      body: "SMEs and editors follow Google's E‑E‑A‑T guidelines.",
+    },
+    {
+      icon: '/features/translation.svg',
+      title: 'Translate Across Languages',
+      body: '50+ certified translators and 1000+ global SMEs.',
+    },
+  ],
+ };
+
+ const stats = [
+  { value: '100M+', label: 'Words Written' },
+  { value: '15+', label: 'Countries catered' },
+  { value: '100K+', label: 'Content Pieces Delivered' },
+  { value: '3000+', label: 'Businesses Supported' },
+ ];
+
+ export const homeData = {
   pricingCalculator: {
     heading: 'Calculate your pricing for content',
     services: [
@@ -22,37 +55,13 @@ export const homeData = {
     text: 'Are you looking for personalized assistance?',
     cta: { label: 'Talk to our experts →', href: '/contact' },
   },
-  features: {
-    heading: "Top Features of Content Whale's Content Writing Services",
-    items: [
-      {
-        icon: '/icons/fast.svg',
-        title: 'Blazing‑Fast Content Delivery',
-        body: 'Process-driven practices enable delivery up to 20,000+ words in 48 hours.',
-      },
-      {
-        icon: '/icons/target.svg',
-        title: 'TG‑focused Content',
-        body: 'Data-driven writing practices to drive traffic and conversions.',
-      },
-      {
-        icon: '/icons/google.svg',
-        title: 'Original & Authoritative',
-        body: "SMEs and editors follow Google's E‑E‑A‑T guidelines.",
-      },
-      {
-        icon: '/icons/translate.svg',
-        title: 'Translate Across Languages',
-        body: '50+ certified translators and 1000+ global SMEs.',
-      },
-    ],
+  features,
+  stats,
+  muchMore: {
+    features,
+    stats,
+    statsHeading: 'We are PROUD to say that we have:',
   },
-  stats: [
-    { value: '100M+', label: 'Words Written' },
-    { value: '15+', label: 'Countries catered' },
-    { value: '100K+', label: 'Content Pieces Delivered' },
-    { value: '3000+', label: 'Businesses Supported' },
-  ],
   caseStudies: {
     heading: 'Expert Content Writing Solutions',
     subhead: 'Providing real‑world results. Few case studies to look at.',

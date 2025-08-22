@@ -4,8 +4,7 @@ import BackgroundGradients from '../components/BackgroundGradients';
 import ServicesSection from './Services';
 import PricingCalculator from '../components/PricingCalculator';
 import Solutions from '../components/Solutions';
-import Features from '../components/Features';
-import Stats from '../components/Stats';
+import MuchMore from '../components/MuchMore';
 import { homeData } from '@/data/home';
 import CalloutBanner from '../components/CalloutBanner';
 import CurvedDivider from '../components/CurvedDivider';
@@ -52,12 +51,7 @@ export function HomePage() {
         className=''
       />
 
-      <section className='container mx-auto px-4 pt-8 pb-16'>
-        <Features data={homeData.features} />
-        <div className='mt-16'>
-          <Stats data={homeData.stats} />
-        </div>
-      </section>
+      <MuchMore className='mt-32 pb-16' data={homeData.muchMore} />
       {/* ... rest of the sections ... */}
     </div>
   );
