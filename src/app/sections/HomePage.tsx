@@ -8,6 +8,7 @@ import MuchMore from '../components/MuchMore';
 import { homeData } from '@/data/home';
 import CalloutBanner from '../components/CalloutBanner';
 import CurvedDivider from '../components/CurvedDivider';
+import MentionsSection from './Mentions';
 
 export function HomePage() {
   return (
@@ -52,6 +53,23 @@ export function HomePage() {
       />
 
       <MuchMore className='mt-32 pb-16' data={homeData.muchMore} />
+
+      <CurvedDivider
+        position='bottom'
+        lineOnly
+        variant='arc'
+        height={70}
+        bulge={160}
+        stroke='#e6e6f0'
+        strokeWidth={2}
+        shadow
+        shadowColor='rgba(0,0,0,0.18)'
+        shadowBlur={8}
+        shadowOffsetY={4}
+        className=''
+      />
+
+      <MentionsSection />
       {/* ... rest of the sections ... */}
     </div>
   );

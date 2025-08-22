@@ -1,5 +1,5 @@
 import { getBaseUrl } from '@/lib/base-url';
-import Mentions from '../components/Mentions';
+import Awards from '../components/Awards';
 
 export default async function MentionsSection({
   heading,
@@ -23,5 +23,5 @@ export default async function MentionsSection({
     subhead: subhead ?? '',
     logos: items.map((m) => ({ alt: m.name, src: m.logo, href: m.url })),
   };
-  return <Mentions data={mapped} />;
+  return <Awards data={mapped} />;
 }
