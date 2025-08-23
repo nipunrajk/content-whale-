@@ -9,6 +9,7 @@ import { homeData } from '@/data/home';
 import CalloutBanner from '../components/CalloutBanner';
 import CurvedDivider from '../components/CurvedDivider';
 import MentionsSection from './Mentions';
+import CaseStudies from './CaseStudies';
 
 export function HomePage() {
   return (
@@ -70,6 +71,8 @@ export function HomePage() {
       />
 
       <MentionsSection />
+
+      <CaseStudies />
       {/* ... rest of the sections ... */}
     </div>
   );
